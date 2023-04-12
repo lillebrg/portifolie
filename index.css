@@ -85,23 +85,34 @@ width: 50px;
     font-size: 30px;
     align-items: center;
 }
+.header2{
+ justify-content: center;
+ display: flex;
+}
 #DKFlag{
     height: 30px;
     width: 30px;
     margin-left: 10px;
 }
 .youtubeVideo{
-    width: 100%; 
-    height: 300px;
-    flex: 1;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    background-color: red;
 }
-iframe {
-    width: 80%;
-    height: 100%;
-    }
+.scaled-frame{
+    position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 
     @media only screen and (max-width: 768px) {
         #headerContainer
@@ -145,6 +156,9 @@ iframe {
         .textContainer{
             font-size: 20px;
         }
+        .header2{
+            font-size: 16px;
+        }
         
         
       }
@@ -190,15 +204,18 @@ iframe {
         .textContainer{
             font-size: 30px;
         }
+        .header2{
+            font-size: 25px;
+        }
       }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1000px) {
         #headerContainer
         {
-            font-size: 18px;
+            font-size: 25px;
         }
         #image{
-            height: 300px;
-            width: 300px;
+            height: 400px;
+            width: 400px;
         }
         #imageLVLcontainer{
             margin: 7px 0 7px 0;
@@ -207,73 +224,36 @@ iframe {
             flex-wrap: wrap;
         }
         .imageLVL{
-            height: 60px;
-            width: 60px;
+            height: 70px;
+            width: 70px;
         }
         #imgLVL10{
-            height: 60px;
-            width: 60px;
+            height: 70px;
+            width: 70px;
         }
         .oneLink{
-            font-size: 15px;
-            margin: 0 10% 0 10%;
+            font-size: 20px;
+            margin: 10px 10% 0 10%;
         }
         .linkLogos{
-            height: 38px;
-            width: 38px;
+            height: 45px;
+            width: 45px;
         }
         #breadContainer{
-            width: 100%;
-            margin: 0 0 0 0;
-            border-radius: 20px;
+            display: flex;
+            background-color: lightgray;
+            margin: 20px 15% 0 15%;
+            flex-direction: column;
+            height: auto;
+            width: auto;
         }
         .lineContainer{
             margin: 0 0 0 20px;
         }
         .textContainer{
-            font-size: 30px;
+            font-size: 35px;
         }
-      }
-      @media only screen and (min-width: 1200px) {
-        #headerContainer
-        {
-            font-size: 18px;
-        }
-        #image{
-            height: 300px;
-            width: 300px;
-        }
-        #imageLVLcontainer{
-            margin: 7px 0 7px 0;
-            column-gap: 5px;
-            width: 100%;
-            flex-wrap: wrap;
-        }
-        .imageLVL{
-            height: 60px;
-            width: 60px;
-        }
-        #imgLVL10{
-            height: 60px;
-            width: 60px;
-        }
-        .oneLink{
-            font-size: 15px;
-            margin: 0 10% 0 10%;
-        }
-        .linkLogos{
-            height: 38px;
-            width: 38px;
-        }
-        #breadContainer{
-            width: 100%;
-            margin: 0 0 0 0;
-            border-radius: 20px;
-        }
-        .lineContainer{
-            margin: 0 0 0 20px;
-        }
-        .textContainer{
+        .header2{
             font-size: 30px;
         }
       }
