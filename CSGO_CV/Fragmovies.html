@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Fragmovies.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="../index.html">ABOUT</a>
+      <a href="./GearAndSettings.html">GEAR AND SETTINGS</a>
+      <a href="Fragmovies.html">FRAGMOVIES</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="ToggleNav()">☰</button>
+    </div>
+
+    <script>
+      function ToggleNav() {
+        var element = document.getElementById("mySidenav");
+        if (
+          document.getElementById("mySidebar").style.width == "250px" &&
+          document.getElementById("main").style.marginLeft == "250px"
+        ) {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        } else {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+      }
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+    <div id="container">
+      <div id="headerContainer">
+        <h1><a href="/index.html" id="head"> Counter-Strike: Global Offensive CV</a></h1>
+      </div>
+    </div>
+    <div id="breadContainer">
+      <h1 class="header2">FRAGMOVIES:</h1>
+      <div class="youtubeVideo">
+        <iframe
+          class="scaled-frame"
+          src="https://www.youtube.com/embed/VHO22N8mkvg"
+        ></iframe>
+      </div>
+      <div class="youtubeVideo">
+        <iframe
+          class="scaled-frame"
+          src="https://www.youtube.com/embed/1vppeFsXNJc"
+        ></iframe>
+      </div>
+    </div>
+    <div id="links">
+      <div class="oneLink">
+        <a href="https://www.faceit.com/en/players/LilleBRG" target="_blank"
+          ><img class="linkLogos" src="../pictures/FaceitLogo.png"
+        /></a>
+        <h2>
+          <a href="https://www.faceit.com/en/players/LilleBRG" target="_blank"
+            >FACEIT</a
+          >
+        </h2>
+      </div>
+      <div class="oneLink">
+        <a href="https://steamcommunity.com/id/LilleBRG" target="_blank"
+          ><img class="linkLogos" src="../pictures/SteamLogo.png"
+        /></a>
+        <h2>
+          <a href="https://steamcommunity.com/id/LilleBRG" target="_blank"
+            >STEAM</a
+          >
+        </h2>
+      </div>
+      <div class="oneLink">
+        <a href="https://steamcommunity.com/id/LilleBRG" target="_blank"
+          ><img class="linkLogos" src="../pictures/TwitchLogo.png"
+        /></a>
+        <h2>
+          <a href="https://www.twitch.tv/lillebrg_" target="_blank">TWITCH</a>
+        </h2>
+      </div>
+    </div>
+  </body>
+</html>
