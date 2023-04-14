@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Puritan:ital@1&display=swap');
 
 .sidebar {
-    height: 20%;
+    height: 18%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -92,24 +92,6 @@ text-decoration: none;
     border-radius: 20px;
     margin-bottom: 10px;
 }
-#imageLVLcontainer{
-    align-items: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-}
-
-.imageLVL {
-opacity: 30%;
-height: 100px;
-width: 100px;
-}
-
-#imgLVL10{
-height: 100px;
-width: 100px;
-}
 #links{
 display: flex;
 justify-content:center;
@@ -147,43 +129,68 @@ width: 50px;
     display: flex;
     flex: 1;
     font-size: 30px;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-#lvlheader{
-    font-size: 30px;
+.specifications{
+    font-size: 25px;
     display: flex;
-    flex: 1;
-    justify-content: center;
+    width: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#crosshaircontainer{
+display: flex;
+align-items: center;
+}
+#crossIMG{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 30px;
 }
 .header2{
  justify-content: center;
  display: flex;
  margin-bottom: 20px;
 }
-#DKFlag{
-    height: 30px;
-    width: 30px;
-    margin-left: 10px;
-}
-.youtubeVideo{
-    justify-content: center;
+.tooltip {
     position: relative;
-    align-items: center;
-    overflow: hidden;
-    width: 80%;
-    padding-top: 56.25%;
-    margin-bottom: 30px;
-}
-.scaled-frame{
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
     position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 
 
     @media only screen and (max-width: 768px) {
@@ -194,17 +201,6 @@ width: 50px;
         #image{
             height: 200px;
             width: 200px;
-        }
-        #imageLVLcontainer{
-            flex-wrap: wrap;
-        }
-        .imageLVL{
-            height: 40px;
-            width: 40px;
-        }
-        #imgLVL10{
-            height: 40px;
-            width: 40px;
         }
         .oneLink{
             font-size: 10px;
@@ -243,18 +239,6 @@ width: 50px;
             height: 300px;
             width: 300px;
         }
-        #imageLVLcontainer{
-
-            flex-wrap: wrap;
-        }
-        .imageLVL{
-            height: 60px;
-            width: 60px;
-        }
-        #imgLVL10{
-            height: 60px;
-            width: 60px;
-        }
         .oneLink{
             font-size: 15px;
             margin: 0 10% 0 10%;
@@ -289,14 +273,6 @@ width: 50px;
         #image{
             height: 400px;
             width: 400px;
-        }
-        .imageLVL{
-            height: 70px;
-            width: 70px;
-        }
-        #imgLVL10{
-            height: 70px;
-            width: 70px;
         }
         .oneLink{
             font-size: 20px;

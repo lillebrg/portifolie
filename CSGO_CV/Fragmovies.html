@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Fragmovies.css" />
+    <script src="../navbar.js"></script>
     <title>Document</title>
   </head>
 
@@ -13,33 +14,13 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="../index.html">ABOUT</a>
       <a href="./GearAndSettings.html">GEAR AND SETTINGS</a>
-      <a href="Fragmovies.html">FRAGMOVIES</a>
+      <a href="./Fragmovies.html">FRAGMOVIES</a>
       <a href="#">Contact</a>
     </div>
 
     <div id="main">
       <button class="openbtn" onclick="ToggleNav()">☰</button>
     </div>
-
-    <script>
-      function ToggleNav() {
-        var element = document.getElementById("mySidenav");
-        if (
-          document.getElementById("mySidebar").style.width == "250px" &&
-          document.getElementById("main").style.marginLeft == "250px"
-        ) {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("main").style.marginLeft = "0";
-        } else {
-          document.getElementById("mySidebar").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-      }
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
     <div id="container">
       <div id="headerContainer">
         <h1><a href="/index.html" id="head"> Counter-Strike: Global Offensive CV</a></h1>

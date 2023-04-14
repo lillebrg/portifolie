@@ -5,109 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../GearAndSettings.css" />
+    <script src="../navbar.js"></script>
+    <script src="../CopyCrosshair.js"></script>
     <title>Document</title>
   </head>
 
   <body>
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="./index.html">ABOUT</a>
+      <a href="../index.html">ABOUT</a>
       <a href="./GearAndSettings.html">GEAR & SETTINGS</a>
-      <a href="./CSGO_CV/Fragmovies.html">FRAGMOVIES</a>
+      <a href="./Fragmovies.html">FRAGMOVIES</a>
       <a href="#">Contact</a>
     </div>
 
     <div id="main">
       <button class="openbtn" onclick="ToggleNav()">☰</button>
     </div>
-
-    <script>
-      function ToggleNav() {
-        var element = document.getElementById("mySidenav");
-        if (
-          document.getElementById("mySidebar").style.width == "250px" &&
-          document.getElementById("main").style.marginLeft == "250px"
-        ) {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("main").style.marginLeft = "0";
-        } else {
-          document.getElementById("mySidebar").style.width = "250px";
-          document.getElementById("main").style.marginLeft = "250px";
-        }
-      }
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-      }
-    </script>
     <div id="container">
       <div id="headerContainer">
-        <h1><a href="/index.html" id="head"> Counter-Strike: Global Offensive CV</a></h1>
+        <h1>
+          <a href="/index.html" id="head">
+            Counter-Strike: Global Offensive CV</a
+          >
+        </h1>
         <img id="image" src="../pictures/lille.jpeg" />
       </div>
 
       <div id="breadContainer">
-        <h1 class="header2">Gear And SETTINGS:</h1>
+        <h1 class="header2">GeEAR AND SETTINGS:</h1>
         <div class="lineContainer">
           <div class="textContainer">
-            <p>Name:</p>
+            <p>Mouse:</p>
           </div>
           <div class="textContainer">
-            <p>Philip Sterlø</p>
+            <p>LOGITECH G PRO X SUPERLIGHT</p>
+            <div class="specifications">
+              <p>DPI:</p>
+              <p>800</p>
+            </div>
+            <div class="specifications">
+              <p>Ingame sensetivity:</p>
+              <p>0.72</p>
+            </div>
+          </div>
+        </div>
+        <div class="lineContainer">
+          <div class="textContainer">
+            <p>Mousepad:</p>
+          </div>
+          <div class="textContainer">
+            <p>X-RAYPAD</p>
+            <div class="specifications">
+              <p>Model:</p>
+              <p>Wave - Night - XL</p>
+            </div>
+            <div class="specifications">
+              <p>Color:</p>
+              <p>Black</p>
+            </div>
+          </div>
+        </div>
+        <div class="lineContainer">
+          <div class="textContainer">
+            <p>Keyboard:</p>
+          </div>
+          <div class="textContainer">
+            <p>SKYLOONG GK87</p>
+            <div class="specifications">
+              <p>Switches:</p>
+              <p>Cherry MX Red</p>
+            </div>
+          </div>
+        </div>
+        <div class="lineContainer">
+          <div class="textContainer">
+            <p>Headset:</p>
+          </div>
+          <div class="textContainer">
+            <p>LOGITECH G PRO X LIGHTSPEED</p>
+          </div>
+        </div>
+        <div class="lineContainer">
+          <div class="textContainer">
+            <p>Monitor:</p>
+          </div>
+          <div class="textContainer">
+            <p>ZOWIE XL2546K</p>
+            <div class="specifications">
+              <p>Refresh rate:</p>
+              <p>240 Hz</p>
+            </div>
+            <div class="specifications">
+              <p>Ingame resolution:</p>
+              <p>1280x960</p>
+            </div>
+            <div class="specifications">
+              <p>Scaling:</p>
+              <p>4x3 Streched</p>
+            </div>
           </div>
         </div>
 
         <div class="lineContainer">
           <div class="textContainer">
-            <p>Nickname:</p>
+            <p>Crosshair:</p>
           </div>
           <div class="textContainer">
-            <p>LilleBRG</p>
-          </div>
-        </div>
-        <div class="lineContainer">
-          <div class="textContainer">
-            <p>Nationality:</p>
-          </div>
-          <div class="textContainer">
-            <p>Denmark</p>
-            <img id="DKFlag" src="../pictures/DKFlag.png" />
-          </div>
-        </div>
-
-        <div class="lineContainer">
-          <div class="textContainer">
-            <p>Roles:</p>
-          </div>
-          <div class="textContainer">
-            <p>Entry-fragger/Anchor</p>
-          </div>
-        </div>
-
-        <div class="lineContainer">
-          <div class="textContainer">
-            <p>Hours:</p>
-          </div>
-          <div class="textContainer">
-            <p>5000</p>
-          </div>
-        </div>
-
-        <div class="lineContainer">
-          <div class="textContainer">
-            <p>Level:</p>
-          </div>
-          <div id="imageLVLcontainer">
-            <img class="imageLVL" src="../pictures/lvl1.png" />
-            <img class="imageLVL" src="../pictures/lvl2.png" />
-            <img class="imageLVL" src="../pictures/lvl3.png" />
-            <img class="imageLVL" src="../pictures/lvl4.png" />
-            <img class="imageLVL" src="../pictures/lvl5.png" />
-            <img class="imageLVL" src="../pictures/lvl6.png" />
-            <img class="imageLVL" src="../pictures/lvl7.png" />
-            <img class="imageLVL" src="../pictures/lvl8.png" />
-            <img class="imageLVL" src="../pictures/lvl9.png" />
-            <img id="imgLVL10" src="../pictures/lvl10.png" />
+            <div id="crosshaircontainer">
+              <img id="crossIMG" src="../pictures/crosshair.png" />
+              <div class="tooltip">
+                <input hidden type="text"value="nAWD-23-DWA2-22-22DawdwaawdaadA"id="crosshairId"/>
+                <button onclick="CopyCrosshairId()" onmouseout="outFunc()">
+                  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                  Copy Crosshair
+                </button>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
