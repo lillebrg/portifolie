@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Puritan:ital@1&display=swap');
 
 .sidebar {
-    height: 18%;
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -121,8 +121,6 @@ width: 50px;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    margin: 0px 20px 0px 50px;
-    
 }
 
 .textContainer {
@@ -295,6 +293,9 @@ align-items: center;
         }
         .textContainer{
             font-size: 35px;
+        }
+        .specifications{
+            margin-left: 20px;
         }
         #lvlheader{
             font-size: 35px;
