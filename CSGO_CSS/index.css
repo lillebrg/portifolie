@@ -1,250 +1,228 @@
 #container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #headerContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#head{
-margin: 0;
-color: black;
-text-decoration: none;
+#head {
+  margin: 0;
+  color: black;
+  text-decoration: none;
 }
 
 #image {
-    
-    height: 300px;
-    width: 300px;
-    border-radius: 20px;
-    margin-bottom: 10px;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
-#imageLVLcontainer{
-    align-items: center;
-    display: flex;
-    align-items: center;
-    flex: 1;
+#imageLVLcontainer {
+  align-items: center;
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 
 .imageLVL {
-opacity: 30%;
-height: 95px;
-width: 95px;
+  opacity: 30%;
+  height: 95px;
+  width: 95px;
 }
 
-#imgLVL10{
-height: 95px;
-width: 95px;
+#imgLVL10 {
+  height: 95px;
+  width: 95px;
 }
-#links{
-display: flex;
-justify-content:center;
+#links {
+  display: flex;
+  justify-content: center;
 }
-.oneLink{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 50px 0px 50px ;
+.oneLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.linkLogos{
-height: 50px;
-width: 50px;
+.linkLogos {
+  height: 50px;
+  width: 50px;
 }
 
 #breadContainer {
-    display: flex;
-    background-color: lightgray;
-    margin: 0px 25% 0 25%;
-    border-radius: 100px;
-    flex-direction: column;
-    height: auto;
-    width: auto;
+  display: flex;
+  background-color: lightgray;
+  margin: 0px 25% 0px 25%;
+  border-radius: 100px;
+  flex-direction: column;
+  height: auto;
+  width: auto;
 }
 
-.lineContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    margin: 0px 20px 0px 50px;
-    
+.lineContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 20px 0px 50px;
 }
 
 .textContainer {
-    display: flex;
-    flex: 1;
-    font-size: 30px;
-    align-items: center;
+  display: flex;
+  flex: 1;
+  font-size: 30px;
+  align-items: center;
+}
+#lvlheader {
+  font-size: 30px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.header2 {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+#DKFlag {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
 
-}
-#lvlheader{
-    font-size: 30px;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-}
-.header2{
- justify-content: center;
- display: flex;
- margin-bottom: 20px;
-}
-#DKFlag{
+/* make footer same width between links on all sites*/
+#footer {
+  margin-top: 5%;
+  position:absolute;
+  background-color: lightgray;
+  width:100%;
+  left: 0;
+ }
+
+@media only screen and (max-width: 768px) {
+  #headerContainer {
+    font-size: 11px;
+  }
+  #image {
+    height: 200px;
+    width: 200px;
+  }
+  #imageLVLcontainer {
+    flex-wrap: wrap;
+  }
+  .imageLVL {
+    height: 40px;
+    width: 40px;
+  }
+  #imgLVL10 {
+    height: 40px;
+    width: 40px;
+  }
+  .oneLink {
+    font-size: 10px;
+    margin: 0 10% 0 10%;
+  }
+  .linkLogos {
     height: 30px;
     width: 30px;
-    margin-left: 10px;
+  }
+  #breadContainer {
+    width: 100%;
+    margin: 0 0 0 0;
+    border-radius: 20px;
+  }
+  .lineContainer {
+    margin: 0 0 0 20px;
+  }
+  .textContainer {
+    font-size: 20px;
+  }
+  #lvlheader {
+    font-size: 20px;
+  }
+  .header2 {
+    font-size: 16px;
+  }
 }
-.youtubeVideo{
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    overflow: hidden;
-    width: 80%;
-    padding-top: 56.25%;
-    margin-bottom: 30px;
+@media only screen and (min-width: 768px) {
+  #headerContainer {
+    font-size: 18px;
+  }
+  #image {
+    height: 300px;
+    width: 300px;
+  }
+  #imageLVLcontainer {
+    flex-wrap: wrap;
+  }
+  .imageLVL {
+    height: 60px;
+    width: 60px;
+  }
+  #imgLVL10 {
+    height: 60px;
+    width: 60px;
+  }
+  .oneLink {
+    font-size: 15px;
+    margin: 0 10% 0 10%;
+  }
+  .linkLogos {
+    height: 38px;
+    width: 38px;
+  }
+  #breadContainer {
+    width: 100%;
+    margin: 0 0 0 0;
+    border-radius: 20px;
+  }
+  .lineContainer {
+    margin: 0 0 0 20px;
+  }
+  .textContainer {
+    font-size: 30px;
+  }
+  #lvlheader {
+    font-size: 30px;
+  }
+  .header2 {
+    font-size: 25px;
+  }
 }
-.scaled-frame{
-    position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+@media only screen and (min-width: 1000px) {
+  #headerContainer {
+    font-size: 25px;
+  }
+  #image {
+    height: 400px;
+    width: 400px;
+  }
+  .oneLink {
+    font-size: 20px;
+    margin: 10px 10% 0 10%;
+  }
+  .linkLogos {
+    height: 45px;
+    width: 45px;
+  }
+  #breadContainer {
+    display: flex;
+    background-color: lightgray;
+    margin: 20px 15% 0 15%;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  .textContainer {
+    font-size: 35px;
+  }
+  #lvlheader {
+    font-size: 35px;
+  }
+  .header2 {
+    font-size: 30px;
+  }
 }
-
-
-    @media only screen and (max-width: 768px) {
-        #headerContainer
-        {
-            font-size: 11px;
-        }
-        #image{
-            height: 200px;
-            width: 200px;
-        }
-        #imageLVLcontainer{
-            flex-wrap: wrap;
-        }
-        .imageLVL{
-            height: 40px;
-            width: 40px;
-        }
-        #imgLVL10{
-            height: 40px;
-            width: 40px;
-        }
-        .oneLink{
-            font-size: 10px;
-            margin: 0 10% 0 10%;
-        }
-        .linkLogos{
-            height: 30px;
-            width: 30px;
-        }
-        #breadContainer{
-            width: 100%;
-            margin: 0 0 0 0;
-            border-radius: 20px;
-        }
-        .lineContainer{
-            margin: 0 0 0 20px;
-        }
-        .textContainer{
-            font-size: 20px;
-        }
-        #lvlheader{
-            font-size: 20px;
-        }
-        .header2{
-            font-size: 16px;
-        }
-        
-        
-      }
-      @media only screen and (min-width: 768px) {
-        #headerContainer
-        {
-            font-size: 18px;
-        }
-        #image{
-            height: 300px;
-            width: 300px;
-        }
-        #imageLVLcontainer{
-
-            flex-wrap: wrap;
-        }
-        .imageLVL{
-            height: 60px;
-            width: 60px;
-        }
-        #imgLVL10{
-            height: 60px;
-            width: 60px;
-        }
-        .oneLink{
-            font-size: 15px;
-            margin: 0 10% 0 10%;
-        }
-        .linkLogos{
-            height: 38px;
-            width: 38px;
-        }
-        #breadContainer{
-            width: 100%;
-            margin: 0 0 0 0;
-            border-radius: 20px;
-        }
-        .lineContainer{
-            margin: 0 0 0 20px;
-        }
-        .textContainer{
-            font-size: 30px;
-        }
-        #lvlheader{
-            font-size: 30px;
-        }
-        .header2{
-            font-size: 25px;
-        }
-      }
-      @media only screen and (min-width: 1000px) {
-        #headerContainer
-        {
-            font-size: 25px;
-        }
-        #image{
-            height: 400px;
-            width: 400px;
-        }
-        .oneLink{
-            font-size: 20px;
-            margin: 10px 10% 0 10%;
-        }
-        .linkLogos{
-            height: 45px;
-            width: 45px;
-        }
-        #breadContainer{
-            display: flex;
-            background-color: lightgray;
-            margin: 20px 15% 0 15%;
-            flex-direction: column;
-            height: auto;
-            width: auto;
-        }
-        .textContainer{
-            font-size: 35px;
-        }
-        #lvlheader{
-            font-size: 35px;
-        }
-        .header2{
-            font-size: 30px;
-        }
-      }
