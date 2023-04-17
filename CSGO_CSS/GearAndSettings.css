@@ -129,13 +129,14 @@ width: 50px;
     font-size: 30px;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+p{
+    margin: 10px 0px 0px 0px;
 }
 .specifications{
     font-size: 25px;
-    display: flex;
-    width: 50%;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 #crosshaircontainer{
 display: flex;

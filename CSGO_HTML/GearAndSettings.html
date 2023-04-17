@@ -4,91 +4,130 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <script src="./navbar.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="../CSGO_CSS/GearAndSettings.css" />
+    <script src="../CSGO_JS/navbar.js"></script>
+    <script src="../CSGO_JS/CopyCrosshair.js"></script>
+    <title>GEAR&SETTINGS</title>
   </head>
 
   <body>
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="./index.html">ABOUT</a>
-      <a href="./CSGO_CV/GearAndSettings.html">GEAR AND SETTINGS</a>
-      <a href="./CSGO_CV/Fragmovies.html">FRAGMOVIES</a>
+      <a href="index.html">ABOUT</a>
+      <a href="GearAndSettings.html">GEAR & SETTINGS</a>
+      <a href="Fragmovies.html">FRAGMOVIES</a>
       <a href="#">Contact</a>
     </div>
 
     <div id="main">
       <button class="openbtn" onclick="ToggleNav()">☰</button>
     </div>
-    </script>
     <div id="container">
       <div id="headerContainer">
-        <h1><a href="/index.html" id="head"> Counter-Strike: Global Offensive CV</a></h1>
+        <h1>
+          <a href="index.html" id="head">
+            Counter-Strike: Global Offensive CV</a
+          >
+        </h1>
         <img id="image" src="../pictures/lille.jpeg" />
       </div>
 
       <div id="breadContainer">
+        <h1 class="header2">GEAR AND SETTINGS:</h1>
         <div class="lineContainer">
           <div class="textContainer">
-            <p>Name:</p>
+            <p>Mouse:</p>
+            <div class="specifications">
+              <p>DPI:</p>
+              <p>Ingame sensetivity:</p>
+            </div>
           </div>
           <div class="textContainer">
-            <p>Philip Sterlø</p>
+            <p>LOGITECH G PRO X SUPERLIGHT</p>
+            <div class="specifications">
+              <p>800</p>
+              <p>0.70</p>
+            </div>
           </div>
         </div>
 
         <div class="lineContainer">
           <div class="textContainer">
-            <p>Nickname:</p>
+            <p>Mousepad:</p>
+            <div class="specifications">
+              <p>Color:</p>
+            </div>
           </div>
           <div class="textContainer">
-            <p>LilleBRG</p>
-          </div>
-        </div>
-        <div class="lineContainer">
-          <div class="textContainer">
-            <p>Nationality:</p>
-          </div>
-          <div class="textContainer">
-            <p>Denmark</p>
-            <img id="DKFlag" src="../pictures/DKFlag.png" />
+            <p>X-RAYPAD WAVE - NIGHT - XL</p>
+            <div class="specifications">
+              <p>Black</p>
+            </div>
           </div>
         </div>
 
         <div class="lineContainer">
           <div class="textContainer">
-            <p>Roles:</p>
+            <p>Keyboard:</p>
+            <div class="specifications">
+              <p>Switches:</p>
+            </div>
           </div>
           <div class="textContainer">
-            <p>Entry-fragger/Anchor</p>
+            <p>SKYLOONG GK87</p>
+            <div class="specifications">
+              <p>Cherry MX Red</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="lineContainer">
+          <div class="textContainer">
+            <p>Headset:</p>
+          </div>
+          <div class="textContainer">
+            <p>LOGITECH G PRO X LIGHTSPEED</p>
+          </div>
+        </div>
+
+
+
+         <div class="lineContainer">
+          <div class="textContainer">
+            <p>Monitor:</p>
+            <div class="specifications">
+              <p>Refresh rate:</p>
+              <p>Ingame resolution:</p>
+              <p>Scaling:</p>
+            </div>
+          </div>
+          <div class="textContainer">
+            <p>ZOWIE XL2546K</p>
+            <div class="specifications">
+              <p>240 Hz</p>
+              <p>1280x1024</p>
+              <p>4x3 Streched</p>
+            </div>
           </div>
         </div>
 
         <div class="lineContainer">
           <div class="textContainer">
-            <p>Hours:</p>
+            <p>Crosshair:</p>
           </div>
           <div class="textContainer">
-            <p>5000</p>
-          </div>
-        </div>
-
-        <div class="lineContainer">
-          <div class="textContainer">
-            <p>Level:</p>
-          </div>
-          <div id="imageLVLcontainer">
-            <img class="imageLVL" src="../pictures/lvl1.png" />
-            <img class="imageLVL" src="../pictures/lvl2.png" />
-            <img class="imageLVL" src="../pictures/lvl3.png" />
-            <img class="imageLVL" src="../pictures/lvl4.png" />
-            <img class="imageLVL" src="../pictures/lvl5.png" />
-            <img class="imageLVL" src="../pictures/lvl6.png" />
-            <img class="imageLVL" src="../pictures/lvl7.png" />
-            <img class="imageLVL" src="../pictures/lvl8.png" />
-            <img class="imageLVL" src="../pictures/lvl9.png" />
-            <img id="imgLVL10" src="../pictures/lvl10.png" />
+            <div id="crosshaircontainer">
+              <img id="crossIMG" src="../pictures/crosshair.png" />
+              <div class="tooltip">
+                <input hidden type="text"value="CSGO-hYOte-s4BmS-JZFq3-oDd5j-u6GSQ"id="crosshairId"/>
+                <button onclick="CopyCrosshairId()" onmouseout="outFunc()">
+                  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                  Copy Crosshair
+                </button>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
